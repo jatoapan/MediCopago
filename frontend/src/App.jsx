@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 // ---------------------------------------------------------------------------
 // Constantes
 // ---------------------------------------------------------------------------
-const API = '';  // vite proxy → backend
+const API = import.meta.env.VITE_API_URL || '';  // Vercel usará la variable, local usará el proxy
 
 const EMPTY_PATIENT = { id: null, nombre: '', cedula: '', fechaNacimiento: null, ciudad: null, plan: null };
 
