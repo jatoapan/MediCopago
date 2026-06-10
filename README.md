@@ -3,8 +3,8 @@
 Un agente conversacional inteligente diseñado para ayudar al paciente a entender sus beneficios médicos *antes* de atenderse. El paciente ingresa su síntoma, el agente sugiere la especialidad requerida y el hospital ideal. Cruzando estos datos con su plan de seguro en tiempo real, le indica exactamente **cuánto será su copago** y qué opción de la red le conviene más económicamente.
 
 🚀 **¡Pruébalo ahora!**
-* **Enlace público del agente funcional:** [Ingresar enlace aquí]
-* **Enlace del repositorio en GitHub o GitLab:** https://github.com/leozam02/PruebHackitahon
+* **Enlace público del agente funcional:** https://medicopago.vercel.app/
+* **Enlace del repositorio en GitHub o GitLab:** https://github.com/jatoapan/MediCopago
 * **Base de datos en Notion:** https://www.notion.so/BD-36416e3153af80329715d170ce003b49?source=copy_link
 
 ---
@@ -22,8 +22,8 @@ Un agente conversacional inteligente diseñado para ayudar al paciente a entende
 
 1. El paciente se autentica con su cédula en el **Frontend (React)** o se registra como un paciente nuevo.
 2. El paciente describe sus síntomas en el chat.
-3. El frontend envía los datos al **Backend (Node.js/Express)**.
-4. El backend evalúa los síntomas usando `estimator.js` para encontrar la especialidad y el costo.
+3. El frontend desplegado con Vercel envía los datos al **Backend (Node.js/Express)**.
+4. El backend implementado con Railway evalúa los síntomas usando `estimator.js` para encontrar la especialidad y el costo.
 5. El backend consulta la API de **Groq (Llama-3.3-70b-versatile)** pasando la estimación exacta para generar una narrativa fluida.
 6. El backend guarda la estimación en la base de datos de "Historial" en **Notion**.
 7. El agente responde al paciente en el chat con los pasos a seguir.
